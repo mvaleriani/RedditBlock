@@ -1,4 +1,4 @@
-document.addEventListener("load", e => {console.log("Scrolling")});
+document.addEventListener("fetch", e => {console.log("Scrolling")});
 let promotedEls = document.getElementsByClassName("fkuxEk")
 
 for (let i = 0; i < promotedEls.length; i++) {
