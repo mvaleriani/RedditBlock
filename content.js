@@ -20,7 +20,7 @@ let config = { attributes: true, childList: true, subtree: true };
 let callback = function (mutationsList) {
     for (let mutation of mutationsList) {
         if (mutation.type == 'childList') {
-            console.log('A child node has been added or removed.');
+            // console.log('A child node has been added or removed.');
             let arr = [];
             let promotedEls = document.getElementsByClassName("ngb5qd-0");
             let otherProm = document.getElementsByClassName("fkuxEk");
@@ -31,7 +31,7 @@ let callback = function (mutationsList) {
             for (let k = 0; k < otherProm.length; k++) {
                 arr.push(otherProm[k]);
             }
-            console.log(arr);
+            // console.log(arr);
             
             // debugger;
             // console.log(promotedEls);
