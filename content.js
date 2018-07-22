@@ -20,7 +20,7 @@ let config = { attributes: true, childList: true, subtree: true };
 let callback = function (mutationsList) {
     for (let mutation of mutationsList) {
         if (mutation.type == 'childList') {
-            // console.log('A child node has been added or removed.');
+            
             let arr = [];
             let promotedEls = document.getElementsByClassName("ngb5qd-0");
             let otherProm = document.getElementsByClassName("fkuxEk");
@@ -31,11 +31,6 @@ let callback = function (mutationsList) {
             for (let k = 0; k < otherProm.length; k++) {
                 arr.push(otherProm[k]);
             }
-            // console.log(arr);
-            
-            // debugger;
-            // console.log(promotedEls);
-            
             for (let i = 0; i < arr.length; i++) {
                 let currEl = arr[i]
                 let parentPost = currEl.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
